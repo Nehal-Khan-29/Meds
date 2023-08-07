@@ -17,7 +17,7 @@ import json
 
 # MySQL Connecting:
 
-mydb=mysql.connector.connect(host='localhost',user='root',password='',database='pharm')
+mydb=mysql.connector.connect(host='localhost',user='root',password='nehal292004!',database='pharm')
  
 
 
@@ -30,7 +30,7 @@ mydb=mysql.connector.connect(host='localhost',user='root',password='',database='
 def tablet_list():
     showtabletwin = tk.Toplevel()
     showtabletwin.geometry('1366x768')
-    showtabletwin.title('Acadamix - Create Class')
+    showtabletwin.title('Meds - List')
     showtabletwin.state('zoomed')
     showtabletwinpic = ImageTk.PhotoImage(Image.open("E:\\NK programs\\Python\\python save\\Pharmacy\\Pharmacy_front.png"))
     showtabletwinpanel = Label(showtabletwin, image=showtabletwinpic)
@@ -70,7 +70,7 @@ def update_table():
     
     upwin=tk.Toplevel()
     upwin.geometry('1366x768')
-    upwin.title('Acadamix - Update class records')
+    upwin.title('Meds - Update')
     upwin.state('zoomed')
     upwinpic=ImageTk.PhotoImage(Image.open("E:\\NK programs\\Python\\python save\\Pharmacy\\Pharmacy_front.png"))
     upwinpanel=Label(upwin,image=upwinpic)
@@ -263,7 +263,7 @@ def insert_page():
     
     insertwin = tk.Toplevel()
     insertwin.geometry('1366x768')
-    insertwin.title('Acadamix - Insert records')
+    insertwin.title('Meds - Add tablets')
     insertwin.state('zoomed')
     insertwinpic = ImageTk.PhotoImage(Image.open("E:\\NK programs\\Python\\python save\\Pharmacy\\Pharmacy_front.png"))
     insertwinpanel = tk.Label(insertwin, image=insertwinpic)
@@ -340,7 +340,7 @@ Cost''', width=20).place(x=500, y=100)
 def bill():
     billwin = tk.Toplevel()
     billwin.geometry('1366x768')
-    billwin.title('Acadamix - Create Class')
+    billwin.title('Meds - Bill')
     billwin.state('zoomed')
     billwinpic = ImageTk.PhotoImage(Image.open("E:\\NK programs\\Python\\python save\\Pharmacy\\Pharmacy_front.png"))
     billwinpanel = Label(billwin, image=billwinpic)
@@ -525,7 +525,7 @@ def bill():
 def history():
     historywin = tk.Toplevel()
     historywin.geometry('1366x768')
-    historywin.title('Acadamix - Create Class')
+    historywin.title('Meds - History')
     historywin.state('zoomed')
     historywinpic = ImageTk.PhotoImage(Image.open("E:\\NK programs\\Python\\python save\\Pharmacy\\Pharmacy_front.png"))
     historywinpanel = Label(historywin, image=historywinpic)
@@ -590,7 +590,7 @@ def homeclose():
 
 home=tk.Tk()
 home.geometry('1366x768')
-home.title('Acadamix')
+home.title('Meds')
 home.state('zoomed')
 home.protocol('WM_DELETE_WINDOW',homeclose)
 
