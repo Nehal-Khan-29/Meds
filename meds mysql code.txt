@@ -1,0 +1,5 @@
+create database pharm;
+use pharm;
+create table tablets (sno int auto_increment primary key,id varchar(20), tablet_name varchar(50),available_tablets int, cost int );
+CREATE TABLE customers (s_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY, customer_name VARCHAR(100), phn_no BIGINT, tablets_purchased VARCHAR(200), tablets_qty VARCHAR(200), total_cost INT
+);
