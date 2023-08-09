@@ -17,7 +17,7 @@ import json
 
 # MySQL Connecting:
 
-mydb=mysql.connector.connect(host='localhost',user='root',password='nehal292004!',database='pharm')
+mydb=mysql.connector.connect(host='localhost',user='root',password='',database='pharm')
  
 
 
